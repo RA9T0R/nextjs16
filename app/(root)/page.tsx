@@ -3,14 +3,14 @@ import ExploreBtn from "@/components/ExploreBtn";
 import EventCard from "@/components/EventCard";
 import { IEvent } from "@/database";
 import {cacheLife} from "next/cache";
-import {events} from "@/lib/constants"; // This is only for static data testing
+// import {events} from "@/lib/constants"; // This is only for static data testing
 
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
 const Home = async () => {
   'use cache';
   cacheLife('hours');
-  // const response = await fetch(`${BASE_URL}/api/events`);
-  // const { events } = await response.json();
+  const response = await fetch(`${BASE_URL}/api/events`);
+  const { events } = await response.json();
 
   return (
     <section className="mt-5">
