@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎉 DevEvent - Next.js 16 Full Course Project
 
-## Getting Started
+This repository contains the code for "DevEvent," a full-stack application built by following the "MongoDB Next.js 16 Full Course" tutorial on YouTube.
 
-First, run the development server:
+## 📋 Repository Purpose
 
+The primary goal of this project is to learn and demonstrate the concepts of Next.js 16, including its new features, file-based routing (App Router), server components, and data fetching methods. It serves as a hands-on exercise from the aforementioned tutorial.
+
+## ⚠️ Important Note: Incomplete Functionality
+
+Please be aware that this repository is a learning exercise focused specifically on Next.js 16 architecture and principles.
+
+As such, **some functionality (particularly around full CRUD operations) may be incomplete or simplified.** The project's main objective was to master Next.js, not to build a fully-featured, production-complete CRUD application.
+
+___
+
+## 🛠️ Tech Stack
+
+| Component | Description |
+| :--- | :--- |
+| **Next.js 16** | The React framework for production (utilizing the App Router). |
+| **Tailwind CSS** | A utility-first CSS framework for styling. |
+| **MongoDB** | The database for storing event and user data. |
+| **Cloudinary** | A cloud-based service for image management and storage. |
+
+___
+
+## 🎓 Training & Acknowledgement
+
+This project is a direct result of following the comprehensive "MongoDB Next.js 16 Full Course" tutorial. All credit for the project structure, concepts, and code-along goes to the original creator.
+
+- Tutorial: [Next.js 16 Full Course](https://youtu.be/I1V9YWqRIeI?si=0Zap4L6qyUtBx8l3).
+
+___
+## 🤸 Quick Start
+To get a local copy up and running, follow these simple steps.
+### Prerequisites
+- Node.js (v18 or later recommended)
+- npm / yarn / pnpm
+- A MongoDB database (local or cloud-based like MongoDB Atlas)
+- A Cloudinary account
+### Installation
+### 1. Clone the repo
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+```
+### 2. Install dependencies
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+### 3. Set up environment variables
+Create a file named `.env.local` in the root of your project and add the necessary environment variables (e.g., `MONGODB_URI`, `CLOUDINARY_CLOUD_NAME`, etc.).
+```bash
+# .env.local
+MONGODB_URI=...
+CLOUDINARY_CLOUD_NAME=...
+CLOUDINARY_API_KEY=...
+CLOUDINARY_API_SECRET=...
+```
+### 4. Run the development server
 ```bash
 npm run dev
 # or
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The application will be accessible in your web browser at `http://localhost:3000/`.
